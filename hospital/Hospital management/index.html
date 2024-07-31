@@ -1,0 +1,48 @@
+<html>
+<body  align="center">
+<form>
+<table width="20%" bgcolor="0099CC" align="center">
+
+<tr>
+<h1>WELCOME TO HOSPITAL MANAGEMENT SYSTEM </hr>
+<td colspan=2><center><font size=4><b>RECEPTIONIST LOGIN</b></font></center></td>
+</tr>
+
+<tr>
+<td>Username</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><input type="Reset"></td>
+<td><input type="submit" onclick="check(this.form)" value="Login"></td>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "arpitha" && form.pwd.value == "arpitha")
+{
+window.open('homepage.html')
+}
+else if(form.userid.value == "nanditha" && form.pwd.value == "nanditha")
+{
+window.open('home.html')
+}
+else
+{
+alert("Error Password or Username")
+}
+}
+</script>
+
+</body>
+</html>
